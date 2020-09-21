@@ -103,7 +103,7 @@ public class ServerHandler extends SimpleChannelInboundHandler<String> {
     //MQ
     volatile int MqFlag = 0;
 
-    ConnectionFactory connFactory = new ActiveMQConnectionFactory("failover:(tcp://localhost:61616)?maxReconnectDelay=10&maxReconnectAttempts=1&timeout=20");
+    ConnectionFactory connFactory = new ActiveMQConnectionFactory("failover:(tcp://127.0.0.1:61616)?maxReconnectDelay=10&maxReconnectAttempts=1&timeout=20");
 
     Connection conn = null;
     Session sess = null;

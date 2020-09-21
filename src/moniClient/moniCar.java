@@ -34,7 +34,7 @@ public class moniCar implements Runnable {
         // TODO Auto-generated method stub
         try {
 //          Socket socket = new Socket("172.25.202.11", 60001);
-            Socket socket = new Socket("127.0.0.1", 60001);
+            Socket socket = new Socket("139.224.195.10", 60001);
             PrintStream ps = new PrintStream(socket.getOutputStream());
 
             double lat = 32.05877181930;

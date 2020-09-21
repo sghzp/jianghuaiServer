@@ -1,4 +1,4 @@
-‘<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 c3p0-config.xml必须位于类路径下面
 private static ComboPooledDataSource ds;
@@ -18,16 +18,16 @@ static{
     <default-config>
 <!--        <property name="driverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>-->
         <property name="driverClass">com.mysql.jdbc.Driver</property>
-        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/ycdaams_test</property>
+        <property name="jdbcUrl">jdbc:mysql://139.224.195.10:3306/ycdaams_test</property>
         <!--<property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/ycdaams</property>-->
         <!--<property name="jdbcUrl">jdbc:sqlserver://139.224.195.10:1433;DatabaseName=jianghuai</property>-->
         <!--<property name="jdbcUrl">jdbc:mysql://139.224.195.10:3306/ycdaams_test</property>-->
-        <property name="user">master</property>
-        <!--<property name="user">root</property>-->
+        <!--<property name="user">master</property>-->
+        <property name="user">root</property>
         <!--<property name="password">yanchengpg</property>-->
         <!--<property name="password">123456</property>-->
-        <!--<property name="password">dingyuanseu123456</property>-->
-        <property name="password">db2016</property>
+        <property name="password">dingyuanseu123456</property>
+        <!--<property name="password">db2016</property>-->
 
         <!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
  		<property name="idleConnectionTestPeriod">60</property>
@@ -46,16 +46,16 @@ static{
     <named-config name="MySQL">
 <!--        <property name="driverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>-->
         <property name="driverClass">com.mysql.jdbc.Driver</property>
-<!--        <property name="jdbcUrl">jdbc:mysql://172.25.202.11:3306/ycdaams_test</property>-->
-        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/ycdaams_test</property>
-<!--        <property name="jdbcUrl">jdbc:mysql://139.224.195.10:3306/ycdaams_test</property>-->
-<!--        <property name="password">dingyuanseu123456</property>-->
-        <property name="password">yw123456</property>
+        <!--   <property name="jdbcUrl">jdbc:mysql://172.25.202.11:3306/ycdaams_test</property>-->
+              <property name="jdbcUrl">jdbc:mysql://139.224.195.10:3306/ycdaams_test</property>
+       <!--        <property name="jdbcUrl">jdbc:mysql://139.224.195.10:3306/ycdaams_test</property>-->
+         <property name="password">dingyuanseu123456</property>
+        <!--   <property name="password">yw123456</property>-->
 
-        <property name="user">root</property>
+              <property name="user">root</property>
 
 
-        <!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
+              <!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
         <property name="idleConnectionTestPeriod">60</property>
         <!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
         <property name="maxIdleTime">60</property>
